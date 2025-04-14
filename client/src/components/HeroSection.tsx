@@ -14,7 +14,7 @@ const HeroSection = () => {
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto">Explore Courses</Button>
               </Link>
               <Link href="#demo">
-                <Button variant="outline" className="bg-white hover:bg-gray-100 text-secondary border-white px-8 py-6 h-auto">Request Demo</Button>
+                <Button variant="outline" className="bg-blue-100 hover:bg-blue-200 text-blue-800 border-blue-300 px-8 py-6 h-auto font-semibold">Request Demo</Button>
               </Link>
             </div>
           </div>
