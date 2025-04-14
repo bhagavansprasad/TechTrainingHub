@@ -61,8 +61,11 @@ const CourseCard = ({ course }: { course: Course }) => {
             <span className="text-lg font-bold text-primary">${course.price}</span>
             <span className="text-sm text-gray-500 ml-1">/ course</span>
           </div>
-          <Link href={`/course/${course.id}`}>
-            <a className="text-orange-500 hover:text-orange-700 font-medium">View Details →</a>
+          <Link 
+            href={`/course/${course.id}`}
+            className="text-orange-500 hover:text-orange-700 font-medium"
+          >
+            View Details →
           </Link>
         </div>
       </div>
