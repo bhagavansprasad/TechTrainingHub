@@ -12,11 +12,12 @@ const BlogSection = () => {
             <h2 className="text-3xl font-bold mb-2">Latest from Our Blog</h2>
             <p className="text-gray-600">Stay updated with industry trends and learning resources</p>
           </div>
-          <Link href="#all-articles" className="hidden md:flex items-center text-primary hover:text-primary-dark transition font-medium">
-            <a className="flex items-center">
-              View All Articles
-              <span className="ml-2">→</span>
-            </a>
+          <Link 
+            href="#all-articles" 
+            className="hidden md:flex items-center text-primary hover:text-primary-dark transition font-medium"
+          >
+            View All Articles
+            <span className="ml-2">→</span>
           </Link>
         </div>
         
@@ -37,11 +38,12 @@ const BlogSection = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3">{post.title}</h3>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                <Link href={`#article-${index + 1}`}>
-                  <a className="text-primary hover:text-primary-dark font-medium inline-flex items-center">
-                    Read More
-                    <span className="ml-2">→</span>
-                  </a>
+                <Link 
+                  href={`#article-${index + 1}`}
+                  className="text-primary hover:text-primary-dark font-medium inline-flex items-center"
+                >
+                  Read More
+                  <span className="ml-2">→</span>
                 </Link>
               </div>
             </div>

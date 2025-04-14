@@ -43,8 +43,8 @@ const Header = () => {
           </nav>
           
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="/#demo">
-              <a className="text-primary font-medium hover:text-primary-dark transition">Request Demo</a>
+            <Link href="/#demo" className="text-primary font-medium hover:text-primary-dark transition">
+              Request Demo
             </Link>
             <Button className="bg-orange-500 hover:bg-orange-600">Enroll Now</Button>
           </div>
@@ -68,29 +68,59 @@ const Header = () => {
       {mobileMenuOpen && (
         <nav className="md:hidden bg-white border-t">
           <div className="container mx-auto px-4 py-3 space-y-3">
-            <Link href="/#courses">
-              <a className="block text-gray-700 hover:text-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Courses</a>
+            <Link 
+              href="/#courses" 
+              className="block text-gray-700 hover:text-primary font-medium" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Courses
             </Link>
-            <Link href="/#about">
-              <a className="block text-gray-700 hover:text-primary font-medium" onClick={() => setMobileMenuOpen(false)}>About Us</a>
+            <Link 
+              href="/#about" 
+              className="block text-gray-700 hover:text-primary font-medium" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About Us
             </Link>
-            <Link href="/#methodology">
-              <a className="block text-gray-700 hover:text-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Methodology</a>
+            <Link 
+              href="/#methodology" 
+              className="block text-gray-700 hover:text-primary font-medium" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Methodology
             </Link>
-            <Link href="/#testimonials">
-              <a className="block text-gray-700 hover:text-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Testimonials</a>
+            <Link 
+              href="/#testimonials" 
+              className="block text-gray-700 hover:text-primary font-medium" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Testimonials
             </Link>
-            <Link href="/#blog">
-              <a className="block text-gray-700 hover:text-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Blog</a>
+            <Link 
+              href="/#blog" 
+              className="block text-gray-700 hover:text-primary font-medium" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
             </Link>
-            <Link href="/#contact">
-              <a className="block text-gray-700 hover:text-primary font-medium" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+            <Link 
+              href="/#contact" 
+              className="block text-gray-700 hover:text-primary font-medium" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact
             </Link>
             <div className="flex flex-col space-y-2 pt-2 border-t">
-              <Link href="/#demo">
-                <a className="text-primary font-medium hover:text-primary-dark" onClick={() => setMobileMenuOpen(false)}>Request Demo</a>
+              <Link 
+                href="/#demo" 
+                className="text-primary font-medium hover:text-primary-dark" 
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Request Demo
               </Link>
-              <Button className="bg-orange-500 hover:bg-orange-600 w-full" onClick={() => setMobileMenuOpen(false)}>Enroll Now</Button>
+              <Button className="bg-orange-500 hover:bg-orange-600 w-full" onClick={() => setMobileMenuOpen(false)}>
+                Enroll Now
+              </Button>
             </div>
           </div>
         </nav>
