@@ -45,7 +45,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link 
               href="/#demo" 
-              className="text-blue-700 font-semibold hover:text-blue-900 transition border border-blue-300 rounded px-4 py-2"
+              className="bg-blue-100 text-blue-800 font-semibold hover:bg-blue-200 transition border border-blue-300 rounded px-4 py-2"
             >
               Request Demo
             </Link>
@@ -116,7 +116,7 @@ const Header = () => {
             <div className="flex flex-col space-y-2 pt-2 border-t">
               <Link 
                 href="/#demo" 
-                className="text-blue-700 font-semibold hover:text-blue-900 transition border border-blue-300 rounded px-4 py-2 inline-block" 
+                className="bg-blue-100 text-blue-800 font-semibold hover:bg-blue-200 transition border border-blue-300 rounded px-4 py-2 inline-block" 
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Request Demo
