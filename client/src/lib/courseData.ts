@@ -6,7 +6,7 @@ export const courses = [
     title: "Comprehensive Generative AI",
     description: "Master the fundamentals of generative AI, including deep learning, GPT architectures, and practical implementation.",
     price: 899,
-    image: "/attached_assets/generative-ai-la-gi.jpg",
+    image: "/attached_assets/gen-ai.gif",
     category: "Generative AI",
     duration: "8 Weeks",
     level: "Beginner to Advanced",
