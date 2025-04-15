@@ -24,13 +24,31 @@ const HeroSection = () => {
             <p className="text-xl mb-8 text-gray-200">Expert-led training programs designed to help you master in-demand technologies and advance your career in tech.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                onClick={() => scrollToSection("enroll")} 
+                onClick={() => {
+                  scrollToSection("contact-form");
+                  // Set a small delay to ensure the form is loaded before we try to click the tab
+                  setTimeout(() => {
+                    const enrollTab = document.querySelector('[value="enroll"]');
+                    if (enrollTab) {
+                      (enrollTab as HTMLElement).click();
+                    }
+                  }, 100);
+                }} 
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto"
               >
                 Enroll Now
               </Button>
               <Button 
-                onClick={() => scrollToSection("demo")} 
+                onClick={() => {
+                  scrollToSection("contact-form");
+                  // Set a small delay to ensure the form is loaded before we try to click the tab
+                  setTimeout(() => {
+                    const demoTab = document.querySelector('[value="demo"]');
+                    if (demoTab) {
+                      (demoTab as HTMLElement).click();
+                    }
+                  }, 100);
+                }} 
                 variant="outline" 
                 className="bg-white hover:bg-gray-100 text-primary border-white px-8 py-6 h-auto font-semibold"
               >
