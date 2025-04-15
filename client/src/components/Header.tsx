@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-                <span className="text-primary text-2xl font-bold">Tech<span className="text-orange-500">Train</span></span>
+                <span className="text-primary text-2xl font-bold">Promptly<span style={{color: 'rgb(144, 200, 73)'}}>AI</span></span>
             </Link>
           </div>
           
