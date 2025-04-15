@@ -10,14 +10,14 @@ const ClientLogos = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
           <div className="grayscale hover:grayscale-0 transition">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" 
+              src="/images/logos/google-logo.png" 
               alt="Google" 
               className="h-10 w-auto"
             />
           </div>
           <div className="grayscale hover:grayscale-0 transition">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" 
+              src="/images/logos/microsoft-logo.png" 
               alt="Microsoft" 
               className="h-10 w-auto"
             />
