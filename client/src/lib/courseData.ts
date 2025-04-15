@@ -48,7 +48,7 @@ export const courses = [
   },
   {
     id: "python-automation",
-    title: "Python Full-Stack Development",
+    title: "Python Full-Stack",
     description: "An immersive, hands-on course to master full-stack development with Python, FastAPI, and MongoDB.",
     price: 27000,
     image: "/attached_assets/python-full-stack.png",
@@ -132,7 +132,7 @@ export const courses = [
   },
   {
     id: "database-automation",
-    title: "Python Automation DB Admins",
+    title: "Python - DB Admin Automation",
     description: "A hands-on course crafted for Database Administrators ready to modernize their workflows.",
     price: 25000,
     image: "/attached_assets/db-automation.jpg",
