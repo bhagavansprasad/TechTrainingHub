@@ -155,7 +155,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Address</h4>
-                    <p className="text-gray-600">123 Tech Avenue, Suite 456<br />San Francisco, CA 94107</p>
+                    <p className="text-gray-600">PromptlyAI,<br />77/1, Marathahalli,<br />Bengaluru - 560103</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -173,7 +173,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Phone</h4>
-                    <p className="text-gray-600">+1 (123) 456-7890<br />+1 (987) 654-3210</p>
+                    <p className="text-gray-600">96633 12872<br />99020 96750</p>
                   </div>
                 </div>
               </div>
@@ -200,7 +200,7 @@ const ContactSection = () => {
               </div>
               <div className="mt-6">
                 <h4 className="font-semibold mb-2">Business Hours</h4>
-                <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM - 2:00 PM<br />Sunday: Closed</p>
+                <p className="text-gray-600">Monday - Saturday: 9:00 AM - 6:00 PM</p>
               </div>
             </div>
           </div>

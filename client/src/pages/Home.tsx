@@ -8,7 +8,7 @@ import Testimonials from "@/components/Testimonials";
 
 import BlogSection from "@/components/BlogSection";
 import CTASection from "@/components/CTASection";
-import Newsletter from "@/components/Newsletter";
+
 import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
@@ -22,7 +22,6 @@ export default function Home() {
       <Testimonials />
       <BlogSection />
       <CTASection />
-      <Newsletter />
       <ContactSection />
     </div>
   );
