@@ -50,6 +50,311 @@ export default function CourseDetails() {
     );
   }
 
+  // Different course content display based on course ID
+  if (course.id === "python-automation") {
+    return (
+      <div className="bg-gray-50">
+        {/* Course Hero Banner */}
+        <section className="relative py-16 bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="md:w-2/3 mb-8 md:mb-0">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge variant="outline" className="bg-blue-500 text-white border-none">
+                    {course.category}
+                  </Badge>
+                  <Badge variant="outline" className="bg-indigo-500 text-white border-none">
+                    {course.duration}
+                  </Badge>
+                </div>
+                
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">{course.title}</h1>
+                <p className="text-xl text-gray-100 mb-6">An immersive, hands-on training program</p>
+                
+                <div className="flex items-center mb-6">
+                  <span className="text-3xl font-bold">₹{course.price.toLocaleString()}</span>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button 
+                    className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2"
+                    onClick={() => {
+                      setLocation("/");
+                      // Set a small delay to ensure the page is loaded before scrolling and clicking the tab
+                      setTimeout(() => {
+                        const contactFormSection = document.getElementById("contact-form");
+                        if (contactFormSection) {
+                          contactFormSection.scrollIntoView({ behavior: "smooth" });
+                          // Wait a bit more for the scroll to finish before clicking the tab
+                          setTimeout(() => {
+                            const enrollTab = document.querySelector('[value="enroll"]');
+                            if (enrollTab) {
+                              (enrollTab as HTMLElement).click();
+                            }
+                          }, 300);
+                        }
+                      }, 300);
+                    }}
+                  >
+                    Enroll Now
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    className="bg-transparent border-white text-white hover:bg-white hover:text-primary px-6 py-2"
+                    onClick={() => {
+                      setLocation("/");
+                      // Set a small delay to ensure the page is loaded before scrolling and clicking the tab
+                      setTimeout(() => {
+                        const contactFormSection = document.getElementById("contact-form");
+                        if (contactFormSection) {
+                          contactFormSection.scrollIntoView({ behavior: "smooth" });
+                          // Wait a bit more for the scroll to finish before clicking the tab
+                          setTimeout(() => {
+                            const demoTab = document.querySelector('[value="demo"]');
+                            if (demoTab) {
+                              (demoTab as HTMLElement).click();
+                            }
+                          }, 300);
+                        }
+                      }, 300);
+                    }}
+                  >
+                    Request Demo
+                  </Button>
+                </div>
+              </div>
+              
+              <div className="md:w-1/3">
+                <img 
+                  src={course.image} 
+                  alt={course.title} 
+                  className="rounded-lg shadow-xl w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Course Overview Section */}
+        <section id="course-overview" className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="text-3xl text-blue-600">
+                  <i className="fa-solid fa-clipboard-list"></i>
+                </div>
+                <h2 className="text-3xl font-bold">Welcome!</h2>
+              </div>
+              
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                Welcome to the <b>Python Full-Stack Development Program</b> — an immersive, hands-on training designed to make you confident in building real-world full-stack applications using Python, FastAPI, MongoDB, and testing frameworks.
+              </p>
+              
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                Whether you're new to programming or looking to elevate your development skills, this course offers you a comprehensive experience across backend development, data processing, and API design.
+              </p>
+
+              <div className="mb-12 border-t border-b border-gray-200 py-8">
+                <h3 className="text-2xl font-bold mb-6">Course Objectives</h3>
+                <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                  <li>Build and test robust backend systems with Python</li>
+                  <li>Design and consume REST APIs using FastAPI</li>
+                  <li>Process and transform structured and unstructured data (JSON, CSV, Excel)</li>
+                  <li>Work with file systems, logs, and command-line utilities</li>
+                  <li>Handle MongoDB operations and integrate with APIs</li>
+                  <li>Write clean, testable, and maintainable code</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Course Content Section */}
+        <section className="py-12 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="text-3xl text-blue-600">
+                  <i className="fa-solid fa-list-check"></i>
+                </div>
+                <h2 className="text-3xl font-bold">Course Modules (Self-Paced Order)</h2>
+              </div>
+              
+              <p className="text-lg text-gray-700 mb-8">
+                The course contains <b>23 modular topics</b> — each designed to be self-contained and practical. You are free to explore them in the order that aligns best with your learning goals or current project work.
+              </p>
+              
+              <div className="bg-white rounded-lg shadow-md p-6 overflow-hidden mb-8">
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="bg-gray-100">
+                        <th className="border px-4 py-2 text-left">Module</th>
+                        <th className="border px-4 py-2 text-left">Title</th>
+                        <th className="border px-4 py-2 text-left">Key Focus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border px-4 py-2">01</td>
+                        <td className="border px-4 py-2 font-medium">Control Flow</td>
+                        <td className="border px-4 py-2">Loops, If-Else logic</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">02</td>
+                        <td className="border px-4 py-2 font-medium">Data Types</td>
+                        <td className="border px-4 py-2">Strings, Lists, Tuples, Dictionaries, Sets</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">03</td>
+                        <td className="border px-4 py-2 font-medium">Functions</td>
+                        <td className="border px-4 py-2">Lambdas, Decorators, Recursion</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">04</td>
+                        <td className="border px-4 py-2 font-medium">Utilities & Built-ins</td>
+                        <td className="border px-4 py-2">Dynamic imports, built-in functions</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">05</td>
+                        <td className="border px-4 py-2 font-medium">OOP</td>
+                        <td className="border px-4 py-2">Classes, Inheritance, Polymorphism</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">06</td>
+                        <td className="border px-4 py-2 font-medium">Exceptions</td>
+                        <td className="border px-4 py-2">Handling, Raising, Custom exceptions</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">07</td>
+                        <td className="border px-4 py-2 font-medium">File Handling</td>
+                        <td className="border px-4 py-2">File operations, modes, line reading</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">08</td>
+                        <td className="border px-4 py-2 font-medium">Folder Handling</td>
+                        <td className="border px-4 py-2">Directory operations, test file creation</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">09</td>
+                        <td className="border px-4 py-2 font-medium">Modules</td>
+                        <td className="border px-4 py-2">Creating and importing Python modules</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">10</td>
+                        <td className="border px-4 py-2 font-medium">Namespace</td>
+                        <td className="border px-4 py-2">Scope, variable resolution</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">11</td>
+                        <td className="border px-4 py-2 font-medium">Deep & Shallow Copy</td>
+                        <td className="border px-4 py-2">Memory behavior and use-cases</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">12</td>
+                        <td className="border px-4 py-2 font-medium">JSON Parser</td>
+                        <td className="border px-4 py-2">Complex parsing and JSON building</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">13</td>
+                        <td className="border px-4 py-2 font-medium">CSV Data</td>
+                        <td className="border px-4 py-2">Read/write CSV, transformations</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">14</td>
+                        <td className="border px-4 py-2 font-medium">Excel Parser</td>
+                        <td className="border px-4 py-2">Working with Excel sheets and charts</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">15</td>
+                        <td className="border px-4 py-2 font-medium">Date & Time</td>
+                        <td className="border px-4 py-2">DateTime utilities and formatting</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">16</td>
+                        <td className="border px-4 py-2 font-medium">Regular Expressions</td>
+                        <td className="border px-4 py-2">Pattern matching, anchors, find, group</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">17</td>
+                        <td className="border px-4 py-2 font-medium">Log Framework</td>
+                        <td className="border px-4 py-2">Log setup, file logs, rotation</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">18</td>
+                        <td className="border px-4 py-2 font-medium">Unit Testing</td>
+                        <td className="border px-4 py-2">Writing and structuring unit tests</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">19</td>
+                        <td className="border px-4 py-2 font-medium">PyTest</td>
+                        <td className="border px-4 py-2">Advanced testing, fixtures, parameterization</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">20</td>
+                        <td className="border px-4 py-2 font-medium">Monkey-Patching</td>
+                        <td className="border px-4 py-2">Replace functions for testing</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">21</td>
+                        <td className="border px-4 py-2 font-medium">CLI Arguments</td>
+                        <td className="border px-4 py-2">Accept inputs from the command line</td>
+                      </tr>
+                      <tr className="bg-gray-50">
+                        <td className="border px-4 py-2">22</td>
+                        <td className="border px-4 py-2 font-medium">FastAPI</td>
+                        <td className="border px-4 py-2">API creation, JWT, CRUD endpoints</td>
+                      </tr>
+                      <tr>
+                        <td className="border px-4 py-2">23</td>
+                        <td className="border px-4 py-2 font-medium">MongoDB Integration</td>
+                        <td className="border px-4 py-2">NoSQL basics, CRUD, pymongo, FastAPI integration</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* CTA Section */}
+        <section className="py-16 bg-blue-600 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-6">Ready to Become a Python Full-Stack Developer?</h2>
+            <p className="text-xl mb-8 max-w-2xl mx-auto">
+              Join our comprehensive course and learn the skills needed to build powerful web applications
+            </p>
+            <div className="flex justify-center">
+              <Button 
+                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2"
+                onClick={() => {
+                  setLocation("/");
+                  // Set a small delay to ensure the page is loaded before scrolling and clicking the tab
+                  setTimeout(() => {
+                    const contactFormSection = document.getElementById("contact-form");
+                    if (contactFormSection) {
+                      contactFormSection.scrollIntoView({ behavior: "smooth" });
+                      // Wait a bit more for the scroll to finish before clicking the tab
+                      setTimeout(() => {
+                        const enrollTab = document.querySelector('[value="enroll"]');
+                        if (enrollTab) {
+                          (enrollTab as HTMLElement).click();
+                        }
+                      }, 300);
+                    }
+                  }, 300);
+                }}
+              >
+                Enroll Now
+              </Button>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
   return (
     <div className="bg-gray-50">
       {/* Course Hero Banner */}
