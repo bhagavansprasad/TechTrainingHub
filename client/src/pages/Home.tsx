@@ -3,7 +3,7 @@ import CourseFilters from "@/components/CourseFilters";
 import CoursesList from "@/components/CoursesList";
 import AboutUs from "@/components/AboutUs";
 import TrainingMethodology from "@/components/TrainingMethodology";
-import ClientLogos from "@/components/ClientLogos";
+
 import Testimonials from "@/components/Testimonials";
 import FAQSection from "@/components/FAQSection";
 import BlogSection from "@/components/BlogSection";
@@ -19,7 +19,6 @@ export default function Home() {
       <CoursesList />
       <AboutUs />
       <TrainingMethodology />
-      <ClientLogos />
       <Testimonials />
       <FAQSection />
       <BlogSection />
