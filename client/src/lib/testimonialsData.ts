@@ -1,23 +1,30 @@
 export const testimonials = [
   {
-    name: "Emily Chen",
-    position: "Data Scientist at Google",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-    quote: "The Python Automation course completely transformed my workflow. I'm now able to automate tedious tasks that used to take hours, allowing me to focus on more valuable work. The instructor was incredibly knowledgeable and supportive.",
+    name: "Lakshay Singh",
+    position: "Network Engineer",
+    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
+    quote: "I joined PromptlyAI for CCNA Training. The training was excellent, and the instructors were very knowledgeable and supportive. I highly recommend their training program for anyone looking to upskill in networking.",
     rating: 5
   },
   {
-    name: "Michael Rodriguez",
-    position: "Network Engineer at Cisco",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-    quote: "The Network Automation course was exactly what I needed to advance my career. The hands-on projects and mentor support were invaluable. Within months of completing the course, I received a promotion and a substantial salary increase.",
-    rating: 4.5
+    name: "Nikhil Jain",
+    position: "Python Developer",
+    image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
+    quote: "I enrolled in the Python programming course. Instructors were well versed with the subject. All my doubts were cleared on the spot. The best part was practical implementation. I got a placement after completing this course. Highly recommended for Python training.",
+    rating: 5
   },
   {
-    name: "Priya Sharma",
-    position: "AI Specialist at Microsoft",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
-    quote: "The Comprehensive Generative AI course exceeded my expectations. The curriculum was cutting-edge and the instructor's expertise was evident. The projects we worked on have become valuable additions to my portfolio that impress employers.",
+    name: "Rajat Sharma",
+    position: "IT Professional",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
+    quote: "It was a great experience learning at PromptlyAI. The instructors are very knowledgeable and friendly. They are always ready to help with any questions. The training program helped me get a better job opportunity. Highly recommended!",
+    rating: 5
+  },
+  {
+    name: "Prateek Gupta",
+    position: "Network Automation Engineer",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80",
+    quote: "I learned Python for Network Automation from PromptlyAI and it was an amazing experience. The trainers were extremely knowledgeable and helpful. They provided practical examples that made complex concepts easy to understand. The hands-on labs were excellent for developing real-world skills.",
     rating: 5
   }
 ];
