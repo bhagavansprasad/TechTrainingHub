@@ -248,6 +248,22 @@ export default function CourseDetails() {
                   <li>Pipelines to Build & Deploy Scalable LLM Apps</li>
                   <li>External System Integration</li>
                 </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">15. LangChain & LangGraph</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>LangChain Deep Dive</li>
+                  <li>LCEL (LangChain Expression Language)</li>
+                  <li>Integration with Google Cloud Services</li>
+                  <li>LangGraph for Workflow Orchestration</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">16. Monitoring & Logging</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>LLM App Observability</li>
+                  <li>Logging Requests & Responses</li>
+                  <li>Performance Monitoring</li>
+                  <li>Debugging</li>
+                </ul>
               </div>
             </div>
           </div>
