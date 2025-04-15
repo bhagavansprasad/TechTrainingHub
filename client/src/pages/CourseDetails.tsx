@@ -143,28 +143,24 @@ export default function CourseDetails() {
                 <div className="text-3xl text-blue-600">
                   <i className="fa-solid fa-clipboard-list"></i>
                 </div>
-                <h2 className="text-3xl font-bold">Welcome!</h2>
+                <h2 className="text-3xl font-bold">Course Overview</h2>
               </div>
+              
+              <ul className="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-8">
+                <li>Master Python from fundamentals to advanced programming with real-world applications.</li>
+                <li>Gain hands-on expertise in data processing, automation, and system scripting.</li>
+                <li>Build and secure RESTful APIs using FastAPI and integrate with databases like MongoDB.</li>
+                <li>Learn testing, logging, concurrency, and deployment essentials for robust backend systems.</li>
+                <li>By the end, confidently develop, test, and deploy fullstack backend solutions using Python.</li>
+              </ul>
               
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 Welcome to the <b>Python Full-Stack Development Program</b> — an immersive, hands-on training designed to make you confident in building real-world full-stack applications using Python, FastAPI, MongoDB, and testing frameworks.
               </p>
               
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 Whether you're new to programming or looking to elevate your development skills, this course offers you a comprehensive experience across backend development, data processing, and API design.
               </p>
-
-              <div className="mb-12 border-t border-b border-gray-200 py-8">
-                <h3 className="text-2xl font-bold mb-6">Course Objectives</h3>
-                <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
-                  <li>Build and test robust backend systems with Python</li>
-                  <li>Design and consume REST APIs using FastAPI</li>
-                  <li>Process and transform structured and unstructured data (JSON, CSV, Excel)</li>
-                  <li>Work with file systems, logs, and command-line utilities</li>
-                  <li>Handle MongoDB operations and integrate with APIs</li>
-                  <li>Write clean, testable, and maintainable code</li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>
@@ -177,141 +173,291 @@ export default function CourseDetails() {
                 <div className="text-3xl text-blue-600">
                   <i className="fa-solid fa-list-check"></i>
                 </div>
-                <h2 className="text-3xl font-bold">Course Modules (Self-Paced Order)</h2>
+                <h2 className="text-3xl font-bold">Course Content</h2>
               </div>
               
-              <p className="text-lg text-gray-700 mb-8">
-                The course contains <b>23 modular topics</b> — each designed to be self-contained and practical. You are free to explore them in the order that aligns best with your learning goals or current project work.
-              </p>
-              
-              <div className="bg-white rounded-lg shadow-md p-6 overflow-hidden mb-8">
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse">
-                    <thead>
-                      <tr className="bg-gray-100">
-                        <th className="border px-4 py-2 text-left">Module</th>
-                        <th className="border px-4 py-2 text-left">Title</th>
-                        <th className="border px-4 py-2 text-left">Key Focus</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="border px-4 py-2">01</td>
-                        <td className="border px-4 py-2 font-medium">Control Flow</td>
-                        <td className="border px-4 py-2">Loops, If-Else logic</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">02</td>
-                        <td className="border px-4 py-2 font-medium">Data Types</td>
-                        <td className="border px-4 py-2">Strings, Lists, Tuples, Dictionaries, Sets</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">03</td>
-                        <td className="border px-4 py-2 font-medium">Functions</td>
-                        <td className="border px-4 py-2">Lambdas, Decorators, Recursion</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">04</td>
-                        <td className="border px-4 py-2 font-medium">Utilities & Built-ins</td>
-                        <td className="border px-4 py-2">Dynamic imports, built-in functions</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">05</td>
-                        <td className="border px-4 py-2 font-medium">OOP</td>
-                        <td className="border px-4 py-2">Classes, Inheritance, Polymorphism</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">06</td>
-                        <td className="border px-4 py-2 font-medium">Exceptions</td>
-                        <td className="border px-4 py-2">Handling, Raising, Custom exceptions</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">07</td>
-                        <td className="border px-4 py-2 font-medium">File Handling</td>
-                        <td className="border px-4 py-2">File operations, modes, line reading</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">08</td>
-                        <td className="border px-4 py-2 font-medium">Folder Handling</td>
-                        <td className="border px-4 py-2">Directory operations, test file creation</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">09</td>
-                        <td className="border px-4 py-2 font-medium">Modules</td>
-                        <td className="border px-4 py-2">Creating and importing Python modules</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">10</td>
-                        <td className="border px-4 py-2 font-medium">Namespace</td>
-                        <td className="border px-4 py-2">Scope, variable resolution</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">11</td>
-                        <td className="border px-4 py-2 font-medium">Deep & Shallow Copy</td>
-                        <td className="border px-4 py-2">Memory behavior and use-cases</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">12</td>
-                        <td className="border px-4 py-2 font-medium">JSON Parser</td>
-                        <td className="border px-4 py-2">Complex parsing and JSON building</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">13</td>
-                        <td className="border px-4 py-2 font-medium">CSV Data</td>
-                        <td className="border px-4 py-2">Read/write CSV, transformations</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">14</td>
-                        <td className="border px-4 py-2 font-medium">Excel Parser</td>
-                        <td className="border px-4 py-2">Working with Excel sheets and charts</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">15</td>
-                        <td className="border px-4 py-2 font-medium">Date & Time</td>
-                        <td className="border px-4 py-2">DateTime utilities and formatting</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">16</td>
-                        <td className="border px-4 py-2 font-medium">Regular Expressions</td>
-                        <td className="border px-4 py-2">Pattern matching, anchors, find, group</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">17</td>
-                        <td className="border px-4 py-2 font-medium">Log Framework</td>
-                        <td className="border px-4 py-2">Log setup, file logs, rotation</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">18</td>
-                        <td className="border px-4 py-2 font-medium">Unit Testing</td>
-                        <td className="border px-4 py-2">Writing and structuring unit tests</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">19</td>
-                        <td className="border px-4 py-2 font-medium">PyTest</td>
-                        <td className="border px-4 py-2">Advanced testing, fixtures, parameterization</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">20</td>
-                        <td className="border px-4 py-2 font-medium">Monkey-Patching</td>
-                        <td className="border px-4 py-2">Replace functions for testing</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">21</td>
-                        <td className="border px-4 py-2 font-medium">CLI Arguments</td>
-                        <td className="border px-4 py-2">Accept inputs from the command line</td>
-                      </tr>
-                      <tr className="bg-gray-50">
-                        <td className="border px-4 py-2">22</td>
-                        <td className="border px-4 py-2 font-medium">FastAPI</td>
-                        <td className="border px-4 py-2">API creation, JWT, CRUD endpoints</td>
-                      </tr>
-                      <tr>
-                        <td className="border px-4 py-2">23</td>
-                        <td className="border px-4 py-2 font-medium">MongoDB Integration</td>
-                        <td className="border px-4 py-2">NoSQL basics, CRUD, pymongo, FastAPI integration</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-2xl font-semibold mb-4">1. Operators</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Arithmetic Operators</li>
+                    <li>Relational Operators</li>
+                    <li>Logical Operators</li>
+                    <li>Membership Operators</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">2. Data Types</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Strings slicing</li>
+                    <li>Strings Find vs Index</li>
+                    <li>Strings Split and Join</li>
+                    <li>Strings Different ways to strip</li>
+                    <li>Strings Replace</li>
+                    <li>Tuples Basics</li>
+                    <li>Tuples Immutable</li>
+                    <li>Lists - Sorting</li>
+                    <li>Matching with elements</li>
+                    <li>Dictionaries - Key-Value pair</li>
+                    <li>Dictionaries with 'in'</li>
+                    <li>Dictionaries - Update</li>
+                    <li>Dictionary - Tuple as a Key</li>
+                    <li>Yield Basics - Generator</li>
+                    <li>Usage of Yield</li>
+                    <li>Different Generators</li>
+                    <li>Sets - Basic operations</li>
+                    <li>Set Operations</li>
+                    <li>Set and Use-cases</li>
+                    <li>Enumerations - Basics</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">3. Control Flow</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Loops - For</li>
+                    <li>Loops - While</li>
+                    <li>Loops - Be careful with for</li>
+                    <li>if-else - Different forms</li>
+                    <li>Understanding 'if' in-depth</li>
+                    <li>Operators - 'Any', 'not', 'in'</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">4. Functions</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Purpose of functions</li>
+                    <li>Function basics</li>
+                    <li>Advanced functions</li>
+                    <li>Lambda - Unnamed functions</li>
+                    <li>Map function</li>
+                    <li>Reduce function</li>
+                    <li>Filter function</li>
+                    <li>Default Arguments</li>
+                    <li>Higher ordered functions</li>
+                    <li>Recursion</li>
+                    <li>Decorators</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">5. Utilities & Built-ins</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Print system module paths</li>
+                    <li>Help of modules</li>
+                    <li>Help of Functions</li>
+                    <li>Soft space</li>
+                    <li>Formatted printing</li>
+                    <li>Different Iterators - Next</li>
+                    <li>Python keywords</li>
+                    <li>Python default functions</li>
+                    <li>Python built-in modules</li>
+                    <li>Colored print</li>
+                    <li>Dynamic imports</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">6. Namespace</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>What is namespace</li>
+                    <li>Different namespace scope</li>
+                    <li>Variable resolution rules</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">7. OOP</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Purpose of OOP</li>
+                    <li>Basics of classes and objects</li>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">8. Exceptions</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>What is exception</li>
+                    <li>Exception Handling</li>
+                    <li>Exceptions as group</li>
+                    <li>Exceptions with arguments</li>
+                    <li>Raising exceptions</li>
+                    <li>User defined exceptions</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">9. File Handling</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Basic File Operations</li>
+                    <li>Read few bytes</li>
+                    <li>Read line</li>
+                    <li>Read lines</li>
+                    <li>Different Modes of opening</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">10. Folder Handling</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Working with directories</li>
+                    <li>Create test folders/files</li>
+                    <li>Use of `os` and `pathlib`</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">11. Modules</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Create new module</li>
+                    <li>Purpose module</li>
+                    <li>Different ways to import</li>
+                    <li>Debugging with modules</li>
+                    <li>Modules in different folders</li>
+                    <li>Compilers vs Modules</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">12. Deep & Shallow Copy</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Deep and Shallow copy Basics</li>
+                    <li>Behind Deep & Shallow copy</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">13. JSON Parser</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>JSON Basics</li>
+                    <li>Parsing complex JSON objects</li>
+                    <li>Building JSON objects</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">14. CSV Data</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Reading CSV file</li>
+                    <li>Parsing CSV file</li>
+                    <li>CSV to Database</li>
+                    <li>Text to CSV</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">15. Excel Parser</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Reading Excel files</li>
+                    <li>Writing Excel files</li>
+                    <li>Creating charts</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">16. Date & Time</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Date and time modules</li>
+                    <li>Different ways to use modules</li>
+                    <li>DateTime formatting</li>
+                    <li>Activity - Diff two dates in string format</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-semibold mb-4">17. Regular Expressions</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Purpose of Regex</li>
+                    <li>Different anchor points</li>
+                    <li>Regex Grouping</li>
+                    <li>Regex Search</li>
+                    <li>Regex Findall</li>
+                    <li>Regex Finditer</li>
+                    <li>Activity - Regex Validate email ID</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">18. Command-Line Arguments</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Basics command line arguments</li>
+                    <li>Processing arguments</li>
+                    <li>argparse module</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">19. Log Framework</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Log setup</li>
+                    <li>File logging</li>
+                    <li>Log rotation</li>
+                    <li>Log levels</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">20. Unit Testing</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Writing test cases</li>
+                    <li>Structuring unit tests</li>
+                    <li>Assert statements</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">21. PyTest</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>PyTest setup</li>
+                    <li>Using fixtures</li>
+                    <li>Parametrization</li>
+                    <li>Mocking</li>
+                    <li>Test discovery</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">22. Monkey-Patching</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Replacing functions for testing</li>
+                    <li>Patching external libraries</li>
+                    <li>Use in unit tests</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">23. REST (FastAPI)</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>API creation with FastAPI</li>
+                    <li>CRUD endpoints</li>
+                    <li>Request and Response Models</li>
+                    <li>JWT Authentication</li>
+                    <li>Error Handling in APIs</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">24. MongoDB Integration</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Introduction to NoSQL</li>
+                    <li>CRUD operations using PyMongo</li>
+                    <li>Integration with FastAPI</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">25. SSH Automation</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>SSH automation</li>
+                    <li>Starting the service</li>
+                    <li>Interactive SSH</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">26. Server & Parallel Tasks</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Starting a service in server</li>
+                    <li>Connecting to multiple servers</li>
+                    <li>Parallel processing</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">27. Multi-processing</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Creating a process</li>
+                    <li>Creating multiple processes</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">28. Threads</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Creating a Thread</li>
+                    <li>Entry function of Thread</li>
+                    <li>Different ways to create threads</li>
+                    <li>Process vs Threads</li>
+                    <li>Creating multiple Threads</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">29. Process vs Threads</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Sequential vs Parallel programming</li>
+                    <li>Parallel Processes</li>
+                    <li>Parallel Threads</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">30. Sockets</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Purpose of sockets</li>
+                    <li>Building client-server programs</li>
+                    <li>Understanding server calls</li>
+                    <li>Understanding client calls</li>
+                    <li>TCP Server</li>
+                    <li>UDP Server</li>
+                    <li>Concurrent server</li>
+                    <li>Iterative server</li>
+                  </ul>
+                  
+                  <h3 className="text-2xl font-semibold mb-4">31. Miscellaneous</h3>
+                  <ul className="list-disc list-inside text-gray-700 mb-6">
+                    <li>Assert</li>
+                    <li>Pitfalls</li>
+                    <li>Debugging - pydb</li>
+                  </ul>
                 </div>
               </div>
             </div>

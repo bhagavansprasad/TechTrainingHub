@@ -1,0 +1,232 @@
+Changes required
+
+1. Upon clicking "View Details →" on tile "Python Full-Stack" 
+   Can you create same page as 'generative-ai' where
+   * Course content is listed in two different columns
+
+
+- Course Overview
+Master Python from fundamentals to advanced programming with real-world applications.
+Gain hands-on expertise in data processing, automation, and system scripting.
+Build and secure RESTful APIs using FastAPI and integrate with databases like MongoDB.
+Learn testing, logging, concurrency, and deployment essentials for robust backend systems.
+By the end, confidently develop, test, and deploy fullstack backend solutions using Python
+
+Course Content
+
+### 1. Operators  
+- Arithmetic Operators  
+- Relational Operators  
+- Logical Operators  
+- Membership Operators  
+
+### 2. Data Types  
+- Strings slicing  
+- Strings Find vs Index  
+- Strings Split and Join  
+- Strings Different ways to strip  
+- Strings Replace  
+- Tuples Basics  
+- Tuples Immutable  
+- Lists - Sorting  
+- Matching with elements  
+- Dictionaries - Key-Value pair  
+- Dictionaries with 'in'  
+- Dictionaries - Update  
+- Dictionary - Tuple as a Key  
+- Yield Basics - Generator  
+- Usage of Yield  
+- Different Generators  
+- Sets - Basic operations  
+- Set Operations  
+- Set and Use-cases  
+- Enumerations - Basics  
+
+### 3. Control Flow  
+- Loops - For  
+- Loops - While  
+- Loops - Be careful with for  
+- if-else - Different forms  
+- Understanding 'if' in-depth  
+- Operators - 'Any', 'not', 'in'  
+
+### 4. Functions  
+- Purpose of functions  
+- Function basics  
+- Advanced functions  
+- Lambda - Unnamed functions  
+- Map function  
+- Reduce function  
+- Filter function  
+- Default Arguments  
+- Higher ordered functions  
+- Recursion  
+- Decorators  
+
+### 5. Utilities & Built-ins  
+- Print system module paths  
+- Help of modules  
+- Help of Functions  
+- Soft space  
+- Formatted printing  
+- Different Iterators - Next  
+- Python keywords  
+- Python default functions  
+- Python built-in modules  
+- Colored print  
+- Dynamic imports  
+
+### 6. Namespace  
+- What is namespace  
+- Different namespace scope  
+- Variable resolution rules  
+
+### 7. OOP  
+- Purpose of OOP  
+- Basics of classes and objects  
+- Inheritance  
+- Polymorphism  
+
+### 8. Exceptions  
+- What is exception  
+- Exception Handling  
+- Exceptions as group  
+- Exceptions with arguments  
+- Raising exceptions  
+- User defined exceptions  
+
+### 9. File Handling  
+- Basic File Operations  
+- Read few bytes  
+- Read line  
+- Read lines  
+- Different Modes of opening  
+
+### 10. Folder Handling  
+- Working with directories  
+- Create test folders/files  
+- Use of `os` and `pathlib`  
+
+### 11. Modules  
+- Create new module  
+- Purpose module  
+- Different ways to import  
+- Debugging with modules  
+- Modules in different folders  
+- Compilers vs Modules  
+
+### 12. Deep & Shallow Copy  
+- Deep and Shallow copy Basics  
+- Behind Deep & Shallow copy  
+
+### 13. JSON Parser  
+- JSON Basics  
+- Parsing complex JSON objects  
+- Building JSON objects  
+
+### 14. CSV Data  
+- Reading CSV file  
+- Parsing CSV file  
+- CSV to Database  
+- Text to CSV  
+
+### 15. Excel Parser  
+- Reading Excel files  
+- Writing Excel files  
+- Creating charts  
+
+### 16. Date & Time  
+- Date and time modules  
+- Different ways to use modules  
+- DateTime formatting  
+- Activity - Diff two dates in string format  
+
+### 17. Regular Expressions  
+- Purpose of Regex  
+- Different anchor points  
+- Regex Grouping  
+- Regex Search  
+- Regex Findall  
+- Regex Finditer  
+- Activity - Regex Validate email ID  
+
+### 18. Command-Line Arguments  
+- Basics command line arguments  
+- Processing arguments  
+- argparse module  
+
+### 19. Log Framework  
+- Log setup  
+- File logging  
+- Log rotation  
+- Log levels  
+
+### 20. Unit Testing  
+- Writing test cases  
+- Structuring unit tests  
+- Assert statements  
+
+### 21. PyTest  
+- PyTest setup  
+- Using fixtures  
+- Parametrization  
+- Mocking  
+- Test discovery  
+
+### 22. Monkey-Patching  
+- Replacing functions for testing  
+- Patching external libraries  
+- Use in unit tests  
+
+### 23. REST (FastAPI)  
+- API creation with FastAPI  
+- CRUD endpoints  
+- Request and Response Models  
+- JWT Authentication  
+- Error Handling in APIs  
+
+### 24. MongoDB Integration  
+- Introduction to NoSQL  
+- CRUD operations using PyMongo  
+- Integration with FastAPI  
+
+### 25. SSH Automation  
+- SSH automation  
+- Starting the service  
+- Interactive SSH  
+
+### 26. Server & Parallel Tasks  
+- Starting a service in server  
+- Connecting to multiple servers  
+- Parallel processing  
+
+### 27. Multi-processing  
+- Creating a process  
+- Creating multiple processes  
+
+### 28. Threads  
+- Creating a Thread  
+- Entry function of Thread  
+- Different ways to create threads  
+- Process vs Threads  
+- Creating multiple Threads  
+
+### 29. Process vs Threads  
+- Sequential vs Parallel programming  
+- Parallel Processes  
+- Parallel Threads  
+
+### 30. Sockets  
+- Purpose of sockets  
+- Building client-server programs  
+- Understanding server calls  
+- Understanding client calls  
+- TCP Server  
+- UDP Server  
+- Concurrent server  
+- Iterative server  
+
+### 31. Miscellaneous  
+- Assert  
+- Pitfalls  
+- Debugging - pydb  
