@@ -28,16 +28,9 @@ const formSchema = z.object({
   course: z.string().min(1, { message: "Please select a course." }),
 });
 
-const CTASection = () => {
+const EnrollmentForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
   
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -56,47 +49,31 @@ const CTASection = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       toast({
-        title: "Demo Request Submitted!",
-        description: "We'll contact you shortly to schedule your demo session.",
+        title: "Enrollment Request Submitted!",
+        description: "We'll contact you shortly to complete your enrollment process.",
       });
       form.reset();
     }, 1000);
   }
 
   return (
-    <section id="demo" className="py-16 bg-gradient-to-r from-primary to-blue-700 text-white">
+    <section id="enroll" className="py-16 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Ready to Accelerate Your IT Career?</h2>
-            <p className="text-xl mb-8 opacity-90">Schedule a free demo session with our instructors and discover how our training programs can help you achieve your career goals.</p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                onClick={() => scrollToSection("enroll")}
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto"
-              >
-                Enroll Now
-              </Button>
-              <Button 
-                onClick={() => {
-                  // Focus on first form input after a small delay
-                  setTimeout(() => {
-                    const nameInput = document.querySelector('input[name="name"]');
-                    if (nameInput) {
-                      (nameInput as HTMLInputElement).focus();
-                    }
-                  }, 100);
-                }} 
-                variant="outline" 
-                className="bg-white hover:bg-gray-100 text-primary border-white px-8 py-6 h-auto font-semibold"
-              >
-                Request Demo
-              </Button>
-            </div>
+            <h2 className="text-3xl font-bold mb-6">Enroll in Our Courses</h2>
+            <p className="text-xl mb-8 opacity-90">Ready to take the next step in your IT career? Fill out this form to enroll in one of our cutting-edge training programs.</p>
+            <ul className="list-disc list-inside space-y-2 mb-8">
+              <li>Flexible payment options available</li>
+              <li>Weekend and weekday batches</li>
+              <li>Limited seats available per batch</li>
+              <li>Practical, industry-focused curriculum</li>
+              <li>Job placement assistance for top performers</li>
+            </ul>
           </div>
           
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-8 border border-white border-opacity-20">
-            <h3 className="text-2xl font-bold mb-6">Request Demo Session</h3>
+            <h3 className="text-2xl font-bold mb-6">Enrollment Form</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                 <FormField
@@ -155,7 +132,7 @@ const CTASection = () => {
                   name="course"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-white">Course of Interest</FormLabel>
+                      <FormLabel className="text-white">Course to Enroll</FormLabel>
                       <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger className="bg-transparent border border-white border-opacity-20 placeholder-white placeholder-opacity-60 focus:ring-2 focus:ring-white focus:border-white">
@@ -164,9 +141,9 @@ const CTASection = () => {
                         </FormControl>
                         <SelectContent>
                           <SelectItem value="generative-ai">Comprehensive Generative AI</SelectItem>
-                          <SelectItem value="python-automation">Python Automation</SelectItem>
-                          <SelectItem value="network-automation">Network Automation</SelectItem>
-                          <SelectItem value="database-automation">Database Administration Automation</SelectItem>
+                          <SelectItem value="python-automation">Python Full-Stack</SelectItem>
+                          <SelectItem value="network-automation">Python Network Automation</SelectItem>
+                          <SelectItem value="database-automation">Python DB Admin Automation</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -175,10 +152,10 @@ const CTASection = () => {
                 />
                 <Button 
                   type="submit" 
-                  className="w-full bg-white text-primary hover:bg-gray-100" 
+                  className="w-full bg-white text-orange-600 hover:bg-gray-100" 
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Submitting..." : "Request Demo"}
+                  {isSubmitting ? "Submitting..." : "Submit Enrollment"}
                 </Button>
               </form>
             </Form>
@@ -189,4 +166,4 @@ const CTASection = () => {
   );
 };
 
-export default CTASection;
+export default EnrollmentForm;

@@ -24,15 +24,15 @@ const HeroSection = () => {
             <p className="text-xl mb-8 text-gray-200">Expert-led training programs designed to help you master in-demand technologies and advance your career in tech.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                onClick={() => scrollToSection("courses")} 
+                onClick={() => scrollToSection("enroll")} 
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto"
               >
                 Enroll Now
               </Button>
               <Button 
-                onClick={() => scrollToSection("contact")} 
+                onClick={() => scrollToSection("demo")} 
                 variant="outline" 
-                className="bg-blue-100 hover:bg-blue-200 text-blue-800 border-blue-300 px-8 py-6 h-auto font-semibold"
+                className="bg-white hover:bg-gray-100 text-primary border-white px-8 py-6 h-auto font-semibold"
               >
                 Request Demo
               </Button>
