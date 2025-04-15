@@ -3,7 +3,7 @@ export const blogPosts = [
     title: "QueryMate with WhatsApp Group Message",
     excerpt: "A tool that integrates with WhatsApp groups to provide query handling and automated responses.",
     date: "April 15, 2024",
-    image: "https://repository-images.githubusercontent.com/700312318/fa3b2b02-b8e9-4c3f-825e-dd80a16c6249",
+    image: "https://opengraph.githubassets.com/1/bhagavansprasad/QueryMate",
     category: "AI ML",
     categoryColor: "bg-blue-100 text-primary",
     url: "https://github.com/bhagavansprasad/QueryMate"
