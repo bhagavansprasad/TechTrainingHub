@@ -5,14 +5,14 @@ const AboutUs = () => {
     <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">About TechTrain</h2>
+          <h2 className="text-3xl font-bold mb-4">About <span className="text-primary">Promptly</span>AI</h2>
           <p className="text-gray-600 max-w-3xl mx-auto">We're on a mission to provide cutting-edge IT training that bridges the gap between academic learning and industry requirements.</p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl font-bold mb-4">Our Mission & Vision</h3>
-            <p className="text-gray-600 mb-6">At TechTrain, we believe that everyone should have access to high-quality IT education that prepares them for real-world challenges and opportunities. Our vision is to become the premier destination for IT professionals seeking to upskill and stay relevant in a rapidly evolving industry.</p>
+            <p className="text-gray-600 mb-6">At <span className="text-primary">Promptly</span>AI, we believe that everyone should have access to high-quality IT education that prepares them for real-world challenges and opportunities. Our vision is to become the premier destination for IT professionals seeking to upskill and stay relevant in a rapidly evolving industry.</p>
             
             <h3 className="text-2xl font-bold mb-4">Our Training Philosophy</h3>
             <div className="space-y-4">

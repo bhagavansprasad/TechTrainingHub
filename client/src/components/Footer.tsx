@@ -32,9 +32,9 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-6">Courses</h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white transition">Comprehensive Generative AI</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Python Automation</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Network Automation</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Database Administration Automation</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Python Full-Stack</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Python - Network Automation</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Python - DB Admin Automation</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition">All Courses</a></li>
             </ul>
           </div>

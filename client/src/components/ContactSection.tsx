@@ -164,7 +164,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-gray-600">info@techtrain.com<br />support@techtrain.com</p>
+                    <p className="text-gray-600">info@<span className="text-primary">promptly</span>ai.com<br />support@<span className="text-primary">promptly</span>ai.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
