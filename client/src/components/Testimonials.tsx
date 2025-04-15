@@ -11,7 +11,7 @@ const Testimonials = () => {
       if (part === "Promptly AI") {
         return (
           <span key={i}>
-            <span className="text-primary">Promptly</span>
+            <span className="text-white">Promptly</span>
             <span style={{ color: 'rgb(144, 200, 73)' }}>AI</span>
           </span>
         );

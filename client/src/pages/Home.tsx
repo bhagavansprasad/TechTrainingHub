@@ -5,7 +5,7 @@ import AboutUs from "@/components/AboutUs";
 import TrainingMethodology from "@/components/TrainingMethodology";
 
 import Testimonials from "@/components/Testimonials";
-import FAQSection from "@/components/FAQSection";
+
 import BlogSection from "@/components/BlogSection";
 import CTASection from "@/components/CTASection";
 import Newsletter from "@/components/Newsletter";
@@ -20,7 +20,6 @@ export default function Home() {
       <AboutUs />
       <TrainingMethodology />
       <Testimonials />
-      <FAQSection />
       <BlogSection />
       <CTASection />
       <Newsletter />
