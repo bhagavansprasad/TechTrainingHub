@@ -21,7 +21,7 @@ const HeroSection = () => {
           <div className="lg:w-1/2 lg:pl-10 relative">
             <div className="absolute inset-0 bg-black/20 rounded-lg z-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+              src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
               alt="Indian students learning together" 
               className="rounded-lg shadow-2xl w-full object-cover h-[400px] opacity-75"
             />
