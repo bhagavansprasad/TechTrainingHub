@@ -77,7 +77,9 @@ const CourseCard = ({ course }: { course: Course }) => {
               </div>
             ) : (
               <>
-                <span className="text-lg font-bold text-primary">${course.price}</span>
+                <span className="text-lg font-bold text-primary">
+                  {course.price > 1000 ? `₹${course.price.toLocaleString()}` : `$${course.price}`}
+                </span>
                 <span className="text-sm text-gray-500 ml-1">/ course</span>
               </>
             )}
