@@ -48,27 +48,27 @@ export const courses = [
   },
   {
     id: "python-automation",
-    title: "Python Automation",
-    description: "Learn how to automate repetitive tasks, build efficient workflows, and create powerful scripts using Python.",
-    price: 699,
-    image: "/attached_assets/network-automation.png",
-    category: "Python",
+    title: "Python Full-Stack Development",
+    description: "An immersive, hands-on course to master full-stack development with Python, FastAPI, and MongoDB.",
+    price: 27000,
+    image: "/attached_assets/python-full-stack.png",
+    category: "Full-Stack",
     duration: "6 Weeks",
     level: "Beginner to Intermediate",
     learningPoints: [
-      "Python fundamentals for automation",
-      "Working with files and data",
-      "Web scraping and API integration",
-      "Task scheduling and monitoring",
-      "Desktop and web application automation",
-      "Building automation frameworks"
+      "Python fundamentals for web development",
+      "FastAPI backend development",
+      "MongoDB database integration",
+      "RESTful API design and implementation",
+      "Frontend development with React",
+      "Full-stack application deployment"
     ],
     curriculum: [
-      { title: "Module 1: Python for Automation", duration: "3 hours" },
-      { title: "Module 2: File Operations and Data Handling", duration: "4 hours" },
-      { title: "Module 3: Web Scraping with Beautiful Soup", duration: "5 hours" },
-      { title: "Module 4: API Integration", duration: "4 hours" },
-      { title: "Module 5: Building Automation Frameworks", duration: "6 hours" }
+      { title: "Module 1: Python Fundamentals for Web Development", duration: "4 hours" },
+      { title: "Module 2: FastAPI Framework Deep Dive", duration: "6 hours" },
+      { title: "Module 3: MongoDB Database Integration", duration: "5 hours" },
+      { title: "Module 4: Modern Frontend with React", duration: "7 hours" },
+      { title: "Module 5: Full-Stack Project Development", duration: "8 hours" }
     ],
     prerequisites: [
       "Basic programming knowledge",
