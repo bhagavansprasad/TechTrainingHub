@@ -34,7 +34,7 @@ const CoursesList = () => {
 
 const CourseCard = ({ course }: { course: Course }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-gray-300 hover:shadow-xl transition-shadow">
       <div className="relative">
         <img 
           src={course.image} 
