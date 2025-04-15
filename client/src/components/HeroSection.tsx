@@ -11,7 +11,7 @@ const HeroSection = () => {
             <p className="text-xl mb-8 text-gray-200">Expert-led training programs designed to help you master in-demand technologies and advance your career in tech.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="#courses">
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto">Explore Courses</Button>
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto">Enroll Now</Button>
               </Link>
               <Link href="#demo">
                 <Button variant="outline" className="bg-blue-100 hover:bg-blue-200 text-blue-800 border-blue-300 px-8 py-6 h-auto font-semibold">Request Demo</Button>

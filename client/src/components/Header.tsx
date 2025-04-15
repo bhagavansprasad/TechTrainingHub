@@ -42,15 +42,7 @@ const Header = () => {
             </Link>
           </nav>
           
-          <div className="hidden md:flex items-center space-x-4">
-            <Link 
-              href="/#demo" 
-              className="bg-blue-100 text-blue-800 font-semibold hover:bg-blue-200 transition border border-blue-300 rounded px-4 py-2"
-            >
-              Request Demo
-            </Link>
-            <Button className="bg-orange-500 hover:bg-orange-600">Enroll Now</Button>
-          </div>
+          {/* Buttons removed as requested */}
           
           {/* Mobile Menu Button */}
           <button 
@@ -113,18 +105,7 @@ const Header = () => {
             >
               Contact
             </Link>
-            <div className="flex flex-col space-y-2 pt-2 border-t">
-              <Link 
-                href="/#demo" 
-                className="bg-blue-100 text-blue-800 font-semibold hover:bg-blue-200 transition border border-blue-300 rounded px-4 py-2 inline-block" 
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Request Demo
-              </Link>
-              <Button className="bg-orange-500 hover:bg-orange-600 w-full" onClick={() => setMobileMenuOpen(false)}>
-                Enroll Now
-              </Button>
-            </div>
+            {/* Mobile buttons removed as requested */}
           </div>
         </nav>
       )}
