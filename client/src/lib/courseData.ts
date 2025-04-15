@@ -4,11 +4,13 @@ export const courses = [
   {
     id: "generative-ai",
     title: "Comprehensive Generative AI",
-    description: "Master the fundamentals of generative AI, including deep learning, GPT architectures, and practical implementation.",
-    price: 899,
+    description: "This comprehensive Generative AI course provides professionals with practical skills to leverage Large Language Models (LLMs) for real-world applications.",
+    price: 19999,
+    originalPrice: 40000,
+    discount: 50,
     image: "/attached_assets/gen-ai.gif",
     category: "Generative AI",
-    duration: "8 Weeks",
+    duration: "8 - 10 Weeks",
     level: "Beginner to Advanced",
     trending: true,
     learningPoints: [

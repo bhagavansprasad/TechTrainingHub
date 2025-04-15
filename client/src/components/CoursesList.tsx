@@ -8,6 +8,8 @@ interface Course {
   title: string;
   description: string;
   price: number;
+  originalPrice?: number;
+  discount?: number;
   image: string;
   category: string;
   duration: string;
@@ -63,8 +65,22 @@ const CourseCard = ({ course }: { course: Course }) => {
         <p className="text-gray-600 mb-4">{course.description}</p>
         <div className="flex justify-between items-center">
           <div>
-            <span className="text-lg font-bold text-primary">${course.price}</span>
-            <span className="text-sm text-gray-500 ml-1">/ course</span>
+            {course.originalPrice ? (
+              <div className="flex flex-col">
+                <div className="flex items-center mb-1">
+                  <span className="text-sm text-gray-500 line-through mr-2">₹{course.originalPrice.toLocaleString()}</span>
+                  <span className="text-xs bg-green-100 text-green-700 px-1.5 py-0.5 rounded">
+                    {course.discount}% OFF
+                  </span>
+                </div>
+                <span className="text-lg font-bold text-primary">₹{course.price.toLocaleString()}</span>
+              </div>
+            ) : (
+              <>
+                <span className="text-lg font-bold text-primary">${course.price}</span>
+                <span className="text-sm text-gray-500 ml-1">/ course</span>
+              </>
+            )}
           </div>
           <Link 
             href={`/course/${course.id}`}
