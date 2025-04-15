@@ -1,8 +1,25 @@
 import { Star, StarHalf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { testimonials } from "@/lib/testimonialsData";
+import React from "react";
 
 const Testimonials = () => {
+  // Helper function to format the company name with proper branding
+  const formatCompanyName = (text: string) => {
+    const parts = text.split(/(Promptly AI)/);
+    return parts.map((part, i) => {
+      if (part === "Promptly AI") {
+        return (
+          <span key={i}>
+            <span className="text-primary">Promptly</span>
+            <span style={{ color: 'rgb(144, 200, 73)' }}>AI</span>
+          </span>
+        );
+      }
+      return part;
+    });
+  };
+
   return (
     <section id="testimonials" className="py-16 bg-gradient-to-r from-blue-900 to-secondary text-white">
       <div className="container mx-auto px-4">
@@ -28,7 +45,7 @@ const Testimonials = () => {
                   <p className="opacity-80 text-sm">{testimonial.position}</p>
                 </div>
               </div>
-              <p className="mb-4">{testimonial.quote}</p>
+              <p className="mb-4">{formatCompanyName(testimonial.quote)}</p>
               <div className="flex text-yellow-400">
                 {[...Array(Math.floor(testimonial.rating))].map((_, i) => (
                   <Star key={i} className="fill-current h-4 w-4" />
