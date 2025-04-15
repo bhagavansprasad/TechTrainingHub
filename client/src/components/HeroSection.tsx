@@ -34,7 +34,7 @@ const HeroSection = () => {
                     }
                   }, 100);
                 }} 
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2"
               >
                 Enroll Now
               </Button>
@@ -50,7 +50,7 @@ const HeroSection = () => {
                   }, 100);
                 }} 
                 variant="outline" 
-                className="bg-white hover:bg-gray-100 text-primary border-white px-8 py-6 h-auto font-semibold"
+                className="bg-white hover:bg-gray-100 text-primary border-white px-6 py-2 font-semibold"
               >
                 Request Demo
               </Button>
