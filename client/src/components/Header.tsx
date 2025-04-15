@@ -9,6 +9,14 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
+  
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="sticky top-0 bg-white shadow-md z-50">
@@ -22,24 +30,24 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/#courses" className="text-gray-700 hover:text-primary font-medium transition">
+            <button onClick={() => scrollToSection("courses")} className="text-gray-700 hover:text-primary font-medium transition">
               Courses
-            </Link>
-            <Link href="/#about" className="text-gray-700 hover:text-primary font-medium transition">
+            </button>
+            <button onClick={() => scrollToSection("about")} className="text-gray-700 hover:text-primary font-medium transition">
               About Us
-            </Link>
-            <Link href="/#methodology" className="text-gray-700 hover:text-primary font-medium transition">
+            </button>
+            <button onClick={() => scrollToSection("methodology")} className="text-gray-700 hover:text-primary font-medium transition">
               Methodology
-            </Link>
-            <Link href="/#testimonials" className="text-gray-700 hover:text-primary font-medium transition">
+            </button>
+            <button onClick={() => scrollToSection("testimonials")} className="text-gray-700 hover:text-primary font-medium transition">
               Testimonials
-            </Link>
-            <Link href="/#blog" className="text-gray-700 hover:text-primary font-medium transition">
+            </button>
+            <button onClick={() => scrollToSection("blog")} className="text-gray-700 hover:text-primary font-medium transition">
               Blog
-            </Link>
-            <Link href="/#contact" className="text-gray-700 hover:text-primary font-medium transition">
+            </button>
+            <button onClick={() => scrollToSection("contact")} className="text-gray-700 hover:text-primary font-medium transition">
               Contact
-            </Link>
+            </button>
           </nav>
           
           {/* Buttons removed as requested */}
@@ -63,48 +71,42 @@ const Header = () => {
       {mobileMenuOpen && (
         <nav className="md:hidden bg-white border-t">
           <div className="container mx-auto px-4 py-3 space-y-3">
-            <Link 
-              href="/#courses" 
-              className="block text-gray-700 hover:text-primary font-medium" 
-              onClick={() => setMobileMenuOpen(false)}
+            <button 
+              className="block text-gray-700 hover:text-primary font-medium w-full text-left" 
+              onClick={() => scrollToSection("courses")}
             >
               Courses
-            </Link>
-            <Link 
-              href="/#about" 
-              className="block text-gray-700 hover:text-primary font-medium" 
-              onClick={() => setMobileMenuOpen(false)}
+            </button>
+            <button 
+              className="block text-gray-700 hover:text-primary font-medium w-full text-left" 
+              onClick={() => scrollToSection("about")}
             >
               About Us
-            </Link>
-            <Link 
-              href="/#methodology" 
-              className="block text-gray-700 hover:text-primary font-medium" 
-              onClick={() => setMobileMenuOpen(false)}
+            </button>
+            <button 
+              className="block text-gray-700 hover:text-primary font-medium w-full text-left" 
+              onClick={() => scrollToSection("methodology")}
             >
               Methodology
-            </Link>
-            <Link 
-              href="/#testimonials" 
-              className="block text-gray-700 hover:text-primary font-medium" 
-              onClick={() => setMobileMenuOpen(false)}
+            </button>
+            <button 
+              className="block text-gray-700 hover:text-primary font-medium w-full text-left" 
+              onClick={() => scrollToSection("testimonials")}
             >
               Testimonials
-            </Link>
-            <Link 
-              href="/#blog" 
-              className="block text-gray-700 hover:text-primary font-medium" 
-              onClick={() => setMobileMenuOpen(false)}
+            </button>
+            <button 
+              className="block text-gray-700 hover:text-primary font-medium w-full text-left" 
+              onClick={() => scrollToSection("blog")}
             >
               Blog
-            </Link>
-            <Link 
-              href="/#contact" 
-              className="block text-gray-700 hover:text-primary font-medium" 
-              onClick={() => setMobileMenuOpen(false)}
+            </button>
+            <button 
+              className="block text-gray-700 hover:text-primary font-medium w-full text-left" 
+              onClick={() => scrollToSection("contact")}
             >
               Contact
-            </Link>
+            </button>
             {/* Mobile buttons removed as requested */}
           </div>
         </nav>
