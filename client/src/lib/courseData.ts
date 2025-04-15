@@ -53,7 +53,7 @@ export const courses = [
     price: 27000,
     image: "/attached_assets/python-full-stack.png",
     category: "Full-Stack",
-    duration: "6 Weeks",
+    duration: "8 Weeks",
     level: "Beginner to Intermediate",
     learningPoints: [
       "Python fundamentals for web development",
