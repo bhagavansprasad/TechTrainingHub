@@ -164,7 +164,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-gray-600">info@promptly<span style={{color: 'rgb(144, 200, 73)'}}>ai</span>.com<br />support@promptly<span style={{color: 'rgb(144, 200, 73)'}}>ai</span>.com</p>
+                    <p className="text-gray-600">info@<span className="text-primary">promptly</span><span style={{color: 'rgb(144, 200, 73)'}}>ai</span>.com<br />support@<span className="text-primary">promptly</span><span style={{color: 'rgb(144, 200, 73)'}}>ai</span>.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">

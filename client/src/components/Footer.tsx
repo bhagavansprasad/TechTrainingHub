@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="text-2xl font-bold mb-6">Promptly<span style={{color: 'rgb(144, 200, 73)'}}>AI</span></div>
+            <div className="text-2xl font-bold mb-6"><span className="text-primary">Promptly</span><span style={{color: 'rgb(144, 200, 73)'}}>AI</span></div>
             <p className="mb-6 text-gray-300">Providing industry-leading IT training and upskilling programs to help professionals advance their careers and organizations build stronger teams.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition">
@@ -85,7 +85,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} PromptlyAI. All rights reserved.</p>
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} <span className="text-primary">Promptly</span><span style={{color: 'rgb(144, 200, 73)'}}>AI</span>. All rights reserved.</p>
             <div>
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" 
