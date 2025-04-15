@@ -12,17 +12,19 @@ const BlogSection = () => {
             <h2 className="text-3xl font-bold mb-2">Latest from Our Blog</h2>
             <p className="text-gray-600">Stay updated with industry trends and learning resources</p>
           </div>
-          <Link 
-            href="#all-articles" 
+          <a 
+            href="https://github.com/bhagavansprasad/bhagavansprasad" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:flex items-center text-primary hover:text-primary-dark transition font-medium"
           >
             View All Articles
             <span className="ml-2">→</span>
-          </Link>
+          </a>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
+          {blogPosts.slice(0, 3).map((post, index) => (
             <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
                 src={post.image} 
@@ -38,23 +40,31 @@ const BlogSection = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3">{post.title}</h3>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                <Link 
-                  href={`#article-${index + 1}`}
+                <a 
+                  href={post.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="text-primary hover:text-primary-dark font-medium inline-flex items-center"
                 >
                   Read More
                   <span className="ml-2">→</span>
-                </Link>
+                </a>
               </div>
             </div>
           ))}
         </div>
         
         <div className="mt-8 text-center md:hidden">
-          <Button variant="link" className="text-primary hover:text-primary-dark transition">
-            View All Articles
-            <span className="ml-2">→</span>
-          </Button>
+          <a 
+            href="https://github.com/bhagavansprasad/bhagavansprasad" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="link" className="text-primary hover:text-primary-dark transition">
+              View All Articles
+              <span className="ml-2">→</span>
+            </Button>
+          </a>
         </div>
       </div>
     </section>

@@ -1,26 +1,56 @@
 export const blogPosts = [
   {
-    title: "Top 10 Applications of Generative AI in 2023",
-    excerpt: "Explore the most innovative ways companies are leveraging generative AI to transform their businesses and create new opportunities.",
-    date: "June 15, 2023",
-    image: "https://images.unsplash.com/photo-1677442135123-1f402e217f77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
-    category: "Generative AI",
-    categoryColor: "bg-blue-100 text-primary"
+    title: "QueryMate with WhatsApp Group Message",
+    excerpt: "A tool that integrates with WhatsApp groups to provide query handling and automated responses.",
+    date: "April 15, 2024",
+    image: "https://repository-images.githubusercontent.com/700312318/fa3b2b02-b8e9-4c3f-825e-dd80a16c6249",
+    category: "AI ML",
+    categoryColor: "bg-blue-100 text-primary",
+    url: "https://github.com/bhagavansprasad/QueryMate"
   },
   {
-    title: "Python Automation: From Beginner to Expert",
-    excerpt: "Learn the step-by-step journey to mastering Python automation, from basic scripts to complex systems that save hours of work.",
-    date: "May 28, 2023",
-    image: "https://images.unsplash.com/photo-1607798748738-b15c40d33d57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    title: "ChromaDB Guide",
+    excerpt: "A beginner's practical guide to vector database implementation using ChromaDB.",
+    date: "April 12, 2024",
+    image: "https://opengraph.githubassets.com/1/bhagavansprasad/chromadb-basics",
+    category: "AI ML",
+    categoryColor: "bg-blue-100 text-primary",
+    url: "https://github.com/bhagavansprasad/chromadb-basics.git"
+  },
+  {
+    title: "Python: Debugging Utility",
+    excerpt: "A custom debugging utility for Python that enhances development workflow.",
+    date: "April 10, 2024",
+    image: "https://opengraph.githubassets.com/1/bhagavansprasad/pdbwhereami",
     category: "Python",
-    categoryColor: "bg-green-100 text-green-800"
+    categoryColor: "bg-green-100 text-green-800",
+    url: "https://github.com/bhagavansprasad/pdbwhereami"
   },
   {
-    title: "The Future of Network Administration",
-    excerpt: "Discover how automation, AI, and cloud technologies are reshaping the role of network administrators and creating new career paths.",
-    date: "May 10, 2023",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
-    category: "Network",
-    categoryColor: "bg-purple-100 text-purple-800"
+    title: "Python: WhatsApp Chat Bot",
+    excerpt: "Implementation of a WhatsApp chatbot using Python for automated messaging.",
+    date: "April 5, 2024",
+    image: "https://opengraph.githubassets.com/1/auratrainings/wapi",
+    category: "Python",
+    categoryColor: "bg-green-100 text-green-800",
+    url: "https://github.com/auratrainings/wapi"
+  },
+  {
+    title: "The Idea that caused my job: Debugging utility",
+    excerpt: "A technical writeup on how a simple debugging utility idea became an essential tool in development.",
+    date: "March 28, 2024",
+    image: "https://res.cloudinary.com/practicaldev/image/fetch/s--Iuj1N8WR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/58h1rzrx03zjujwygagn.png",
+    category: "Technical",
+    categoryColor: "bg-purple-100 text-purple-800",
+    url: "https://dev.to/bhagavan_prasad_d1496a96a/python-debugging-utility-kd1"
+  },
+  {
+    title: "A Beginner's Practical Guide to Vector Database: ChromaDB",
+    excerpt: "Learn how to get started with vector databases using ChromaDB for better data management and retrieval.",
+    date: "March 15, 2024",
+    image: "https://res.cloudinary.com/practicaldev/image/fetch/s--CMAjIPY9--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6f8ry3yy5p1p2lc0k4jr.webp",
+    category: "Technical",
+    categoryColor: "bg-purple-100 text-purple-800",
+    url: "https://dev.to/bhagavan_prasad_d1496a96a/a-beginners-practical-guide-to-vector-database-chromadb-5122"
   }
 ];
