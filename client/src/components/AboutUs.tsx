@@ -60,15 +60,15 @@ const AboutUs = () => {
                 <p className="text-gray-600 text-center mb-3">Founder, Teacher, Technical Director, Architect</p>
                 <p className="text-gray-600 text-sm">Expert with years of experience in software development, training, and system architecture.</p>
                 <div className="flex justify-center mt-4 space-x-3">
-                  <a href="#" className="text-blue-600 hover:text-blue-800">
+                  <a href="https://www.linkedin.com/in/bhagavan-prasad-8929991/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
                     <Linkedin className="h-5 w-5" />
                   </a>
-                  <a href="#" className="text-gray-700 hover:text-gray-900">
+                  <a href="https://github.com/bhagavansprasad" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
                     <Github className="h-5 w-5" />
                   </a>
-                  <a href="#" className="text-blue-400 hover:text-blue-600">
+                  <span className="text-blue-400">
                     <Twitter className="h-5 w-5" />
-                  </a>
+                  </span>
                 </div>
               </div>
 
