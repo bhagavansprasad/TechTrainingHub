@@ -92,14 +92,21 @@ export default function CourseDetails() {
                 <Button 
                   className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2"
                   onClick={() => {
-                    setLocation("/#contact-form");
-                    // Set a small delay to ensure the form is loaded before we try to click the tab
+                    setLocation("/");
+                    // Set a small delay to ensure the page is loaded before scrolling and clicking the tab
                     setTimeout(() => {
-                      const enrollTab = document.querySelector('[value="enroll"]');
-                      if (enrollTab) {
-                        (enrollTab as HTMLElement).click();
+                      const contactFormSection = document.getElementById("contact-form");
+                      if (contactFormSection) {
+                        contactFormSection.scrollIntoView({ behavior: "smooth" });
+                        // Wait a bit more for the scroll to finish before clicking the tab
+                        setTimeout(() => {
+                          const enrollTab = document.querySelector('[value="enroll"]');
+                          if (enrollTab) {
+                            (enrollTab as HTMLElement).click();
+                          }
+                        }, 300);
                       }
-                    }, 100);
+                    }, 300);
                   }}
                 >
                   Enroll Now
@@ -108,14 +115,21 @@ export default function CourseDetails() {
                   variant="outline" 
                   className="bg-transparent border-white text-white hover:bg-white hover:text-primary px-6 py-2"
                   onClick={() => {
-                    setLocation("/#contact-form");
-                    // Set a small delay to ensure the form is loaded before we try to click the tab
+                    setLocation("/");
+                    // Set a small delay to ensure the page is loaded before scrolling and clicking the tab
                     setTimeout(() => {
-                      const demoTab = document.querySelector('[value="demo"]');
-                      if (demoTab) {
-                        (demoTab as HTMLElement).click();
+                      const contactFormSection = document.getElementById("contact-form");
+                      if (contactFormSection) {
+                        contactFormSection.scrollIntoView({ behavior: "smooth" });
+                        // Wait a bit more for the scroll to finish before clicking the tab
+                        setTimeout(() => {
+                          const demoTab = document.querySelector('[value="demo"]');
+                          if (demoTab) {
+                            (demoTab as HTMLElement).click();
+                          }
+                        }, 300);
                       }
-                    }, 100);
+                    }, 300);
                   }}
                 >
                   Request Demo
@@ -306,14 +320,21 @@ export default function CourseDetails() {
             <Button 
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2"
               onClick={() => {
-                setLocation("/#contact-form");
-                // Set a small delay to ensure the form is loaded before we try to click the tab
+                setLocation("/");
+                // Set a small delay to ensure the page is loaded before scrolling and clicking the tab
                 setTimeout(() => {
-                  const enrollTab = document.querySelector('[value="enroll"]');
-                  if (enrollTab) {
-                    (enrollTab as HTMLElement).click();
+                  const contactFormSection = document.getElementById("contact-form");
+                  if (contactFormSection) {
+                    contactFormSection.scrollIntoView({ behavior: "smooth" });
+                    // Wait a bit more for the scroll to finish before clicking the tab
+                    setTimeout(() => {
+                      const enrollTab = document.querySelector('[value="enroll"]');
+                      if (enrollTab) {
+                        (enrollTab as HTMLElement).click();
+                      }
+                    }, 300);
                   }
-                }, 100);
+                }, 300);
               }}
             >
               Enroll Now
