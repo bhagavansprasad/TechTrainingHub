@@ -49,7 +49,7 @@ export const courses = [
     title: "Python Automation",
     description: "Learn how to automate repetitive tasks, build efficient workflows, and create powerful scripts using Python.",
     price: 699,
-    image: "https://images.unsplash.com/photo-1607798748738-b15c40d33d57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "https://storage.googleapis.com/uxpilot-auth.appspot.com/attached_assets/image_1744705292792.png",
     category: "Python",
     duration: "6 Weeks",
     level: "Beginner to Intermediate",
