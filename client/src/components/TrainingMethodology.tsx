@@ -77,48 +77,6 @@ const TrainingMethodology = () => {
             </ul>
           </div>
         </div>
-        
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">For Corporations</h3>
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h4 className="text-xl font-bold mb-4">Customized Training Solutions</h4>
-                <p className="text-gray-600 mb-6">We understand that every organization has unique needs. Our corporate training programs are tailored to address your specific challenges and objectives.</p>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <Check className="text-green-500 mt-1 mr-2 h-4 w-4" />
-                    <span className="text-gray-700">Customized curriculum based on your organization's tech stack</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="text-green-500 mt-1 mr-2 h-4 w-4" />
-                    <span className="text-gray-700">Flexible scheduling to accommodate work hours</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="text-green-500 mt-1 mr-2 h-4 w-4" />
-                    <span className="text-gray-700">Team-based projects to promote collaboration</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="text-green-500 mt-1 mr-2 h-4 w-4" />
-                    <span className="text-gray-700">Progress tracking and reporting for management</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="text-green-500 mt-1 mr-2 h-4 w-4" />
-                    <span className="text-gray-700">Volume discounts for team enrollments</span>
-                  </li>
-                </ul>
-                <Button className="mt-6 bg-primary hover:bg-blue-700">Request Corporate Training</Button>
-              </div>
-              <div>
-                <img 
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
-                  alt="Corporate Training" 
-                  className="rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
