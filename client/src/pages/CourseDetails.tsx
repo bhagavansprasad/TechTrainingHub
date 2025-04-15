@@ -89,10 +89,35 @@ export default function CourseDetails() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2">
+                <Button 
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2"
+                  onClick={() => {
+                    setLocation("/#contact-form");
+                    // Set a small delay to ensure the form is loaded before we try to click the tab
+                    setTimeout(() => {
+                      const enrollTab = document.querySelector('[value="enroll"]');
+                      if (enrollTab) {
+                        (enrollTab as HTMLElement).click();
+                      }
+                    }, 100);
+                  }}
+                >
                   Enroll Now
                 </Button>
-                <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary px-6 py-2">
+                <Button 
+                  variant="outline" 
+                  className="bg-transparent border-white text-white hover:bg-white hover:text-primary px-6 py-2"
+                  onClick={() => {
+                    setLocation("/#contact-form");
+                    // Set a small delay to ensure the form is loaded before we try to click the tab
+                    setTimeout(() => {
+                      const demoTab = document.querySelector('[value="demo"]');
+                      if (demoTab) {
+                        (demoTab as HTMLElement).click();
+                      }
+                    }, 100);
+                  }}
+                >
                   Request Demo
                 </Button>
               </div>
@@ -277,12 +302,21 @@ export default function CourseDetails() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join our comprehensive course and learn the skills needed to build cutting-edge AI applications
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2">
+          <div className="flex justify-center">
+            <Button 
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2"
+              onClick={() => {
+                setLocation("/#contact-form");
+                // Set a small delay to ensure the form is loaded before we try to click the tab
+                setTimeout(() => {
+                  const enrollTab = document.querySelector('[value="enroll"]');
+                  if (enrollTab) {
+                    (enrollTab as HTMLElement).click();
+                  }
+                }, 100);
+              }}
+            >
               Enroll Now
-            </Button>
-            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary px-6 py-2">
-              Contact for Corporate Training
             </Button>
           </div>
         </div>
