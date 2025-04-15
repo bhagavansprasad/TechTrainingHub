@@ -182,21 +182,21 @@ const ContactSection = () => {
             <div className="bg-gray-50 rounded-lg shadow-md p-8">
               <h3 className="text-xl font-bold mb-6">Connect With Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-blue-700 transition">
+                <span className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
                   <Facebook className="h-5 w-5" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-blue-700 transition">
+                </span>
+                <span className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
                   <Twitter className="h-5 w-5" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-blue-700 transition">
+                </span>
+                <span className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
                   <Linkedin className="h-5 w-5" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-blue-700 transition">
+                </span>
+                <span className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
                   <Youtube className="h-5 w-5" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-blue-700 transition">
+                </span>
+                <span className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
                   <Instagram className="h-5 w-5" />
-                </a>
+                </span>
               </div>
               <div className="mt-6">
                 <h4 className="font-semibold mb-2">Business Hours</h4>
