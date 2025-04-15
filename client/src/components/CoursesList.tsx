@@ -48,11 +48,7 @@ const CourseCard = ({ course }: { course: Course }) => {
             Trending
           </div>
         )}
-        {course.id === 'generative-ai' && (
-          <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-3 text-xl font-bold text-center">
-            Comprehensive Generative AI
-          </div>
-        )}
+        {/* The image already has "GENERATIVE AI" text on it */}
       </div>
       <div className="p-6">
         <div className="flex items-center mb-2">
