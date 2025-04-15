@@ -90,9 +90,9 @@ export const courses = [
   },
   {
     id: "network-automation",
-    title: "Network Automation",
-    description: "Automate and optimize network configurations, management, and monitoring using modern tools and frameworks.",
-    price: 799,
+    title: "Python - Network Automation",
+    description: "Python Automation in Network Administration – a hands-on course designed for Network Engineers, by Network Engineers. Course takes you from basic Python to powerful automation workflows tailored specifically for network operations",
+    price: 32000,
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     category: "Network",
     duration: "10 Weeks",
