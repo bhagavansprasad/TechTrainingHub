@@ -21,29 +21,22 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-16 bg-gradient-to-r from-blue-900 to-secondary text-white">
+    <section id="testimonials" className="py-16 bg-blue-900 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">What Our Students Say</h2>
           <p className="max-w-3xl mx-auto opacity-80">Real reviews from our students who have transformed their careers through our training programs.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
               className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20"
             >
-              <div className="flex items-center mb-4">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name} 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-semibold">{testimonial.name}</h4>
-                  <p className="opacity-80 text-sm">{testimonial.position}</p>
-                </div>
+              <div className="mb-3">
+                <h4 className="font-semibold text-lg">{testimonial.name}</h4>
+                <p className="opacity-80 text-sm">{testimonial.position}</p>
               </div>
               <p className="mb-4">{formatCompanyName(testimonial.quote)}</p>
               <div className="flex text-yellow-400">
@@ -59,7 +52,7 @@ const Testimonials = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button variant="outline" className="inline-flex items-center text-white border border-white border-opacity-30 px-6 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition">
+          <Button variant="default" className="inline-flex items-center bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-md transition">
             View All Testimonials
             <span className="ml-2">→</span>
           </Button>
