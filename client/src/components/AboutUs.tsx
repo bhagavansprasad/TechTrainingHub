@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Github, Youtube } from "lucide-react";
+import bhagavanImg from "@assets/bhagavan.png";
 
 const AboutUs = () => {
   return (
@@ -51,7 +52,7 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 gap-6">
               <div className="bg-gray-50 rounded-lg p-6">
                 <img 
-                  src="/bhagavan.png" 
+                  src={bhagavanImg} 
                   alt="Bhagavan" 
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
