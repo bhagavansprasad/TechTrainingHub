@@ -84,12 +84,18 @@ const CourseCard = ({ course }: { course: Course }) => {
               </>
             )}
           </div>
-          <Link 
-            href={`/course/${course.id}`}
-            className="text-orange-500 hover:text-orange-700 font-medium"
-          >
-            View Details →
-          </Link>
+          {(course.id === "generative-ai" || course.id === "python-automation") ? (
+            <Link 
+              href={`/course/${course.id}`}
+              className="text-orange-500 hover:text-orange-700 font-medium"
+            >
+              View Details →
+            </Link>
+          ) : (
+            <span className="text-gray-400 cursor-not-allowed">
+              Coming Soon
+            </span>
+          )}
         </div>
       </div>
     </div>
