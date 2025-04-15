@@ -51,135 +51,226 @@ export default function CourseDetails() {
   }
 
   return (
-    <section id="course-details" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="md:flex">
-            <div className="md:w-2/5">
-              <img 
-                src={course.image} 
-                alt={`${course.title} Course`} 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="md:w-3/5 p-8">
+    <div className="bg-gray-50">
+      {/* Course Hero Banner */}
+      <section className="relative py-16 bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="md:w-2/3 mb-8 md:mb-0">
               <div className="flex flex-wrap gap-2 mb-4">
-                <Badge variant="outline" className="bg-blue-100 text-primary border-none">
+                <Badge variant="outline" className="bg-blue-500 text-white border-none">
                   {course.category}
                 </Badge>
-                <Badge variant="outline" className="bg-gray-100 text-gray-800 border-none">
+                <Badge variant="outline" className="bg-indigo-500 text-white border-none">
                   {course.duration}
                 </Badge>
-                <Badge variant="outline" className="bg-green-100 text-green-800 border-none">
-                  {course.level}
-                </Badge>
+                {course.trending && (
+                  <Badge variant="outline" className="bg-orange-500 text-white border-none">
+                    Trending
+                  </Badge>
+                )}
               </div>
               
-              <h2 className="text-3xl font-bold mb-4">{course.title}</h2>
-              <p className="text-gray-600 mb-6">{course.description}</p>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{course.title}</h1>
+              <p className="text-xl text-gray-100 mb-6">Fundamentals to Real-World Applications</p>
               
               <div className="flex items-center mb-6">
-                <div className="mr-6">
-                  <span className="text-3xl font-bold text-primary">${course.price}</span>
-                  <span className="text-gray-500">/ course</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="flex text-yellow-400">
-                    <Star className="fill-current" />
-                    <Star className="fill-current" />
-                    <Star className="fill-current" />
-                    <Star className="fill-current" />
-                    <StarHalf className="fill-current" />
+                {course.originalPrice ? (
+                  <div className="flex items-center">
+                    <span className="text-3xl font-bold">₹{course.price.toLocaleString()}</span>
+                    <span className="ml-3 text-xl text-gray-300 line-through">₹{course.originalPrice.toLocaleString()}</span>
+                    <span className="ml-3 bg-green-500 text-white px-2 py-1 rounded text-sm font-medium">
+                      {course.discount}% OFF
+                    </span>
                   </div>
-                  <span className="ml-2 text-gray-600">4.8 (120 reviews)</span>
-                </div>
-              </div>
-              
-              <div className="mb-8">
-                <h3 className="font-semibold text-lg mb-3">What you'll learn</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  {course.learningPoints?.map((point: string, index: number) => (
-                    <div key={index} className="flex items-start">
-                      <Check className="text-green-500 mt-1 mr-2 h-4 w-4" />
-                      <span>{point}</span>
-                    </div>
-                  ))}
-                </div>
+                ) : (
+                  <span className="text-3xl font-bold">₹{course.price.toLocaleString()}</span>
+                )}
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-orange-500 hover:bg-orange-600">Enroll Now</Button>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-                  Request Syllabus
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2">
+                  Enroll Now
+                </Button>
+                <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary px-6 py-2">
+                  Request Demo
                 </Button>
               </div>
             </div>
+            
+            <div className="md:w-1/3">
+              <img 
+                src={course.image} 
+                alt={course.title} 
+                className="rounded-lg shadow-xl w-full h-auto"
+              />
+            </div>
           </div>
-          
-          <div className="p-8 border-t">
-            <div className="flex flex-wrap mb-8">
-              <div className="w-full md:w-1/3 mb-6 md:mb-0">
-                <h3 className="font-semibold text-lg mb-3">Course Curriculum</h3>
-                <div className="space-y-3">
-                  {course.curriculum?.map((module: any, index: number) => (
-                    <div key={index} className="flex justify-between">
-                      <span>{module.title}</span>
-                      <span className="text-gray-500">{module.duration}</span>
-                    </div>
-                  ))}
-                  <Button variant="link" className="text-primary hover:underline font-medium p-0">
-                    View Full Curriculum
-                  </Button>
-                </div>
+        </div>
+      </section>
+      
+      {/* Course Overview Section */}
+      <section id="course-overview" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="text-3xl text-blue-600">
+                <i className="fa-solid fa-clipboard-list"></i>
               </div>
-              
-              <div className="w-full md:w-1/3 mb-6 md:mb-0 md:px-8">
-                <h3 className="font-semibold text-lg mb-3">Prerequisites</h3>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  {course.prerequisites?.map((prereq: string, index: number) => (
-                    <li key={index}>{prereq}</li>
-                  ))}
+              <h2 className="text-3xl font-bold">Course Overview</h2>
+            </div>
+            
+            <p className="text-lg text-gray-700 leading-relaxed mb-8 text-justify">
+              This comprehensive <b>Generative AI</b> course provides professionals with practical skills to
+              leverage <b>Large Language Models (LLMs)</b> for real-world applications. Covering key
+              concepts like <b>Prompt Engineering, Retrieval-Augmented Generation (RAG), Embeddings, Vector
+              Databases, and AI-driven automation</b>, the course emphasizes <b>multimodal learning
+              (text, image, audio, video) and API-based integrations</b>.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              Participants will gain hands-on experience with <b>LangChain, OpenAI, Vertex AI, FastAPI, and
+              Streamlit</b>, enabling them to develop <b>chatbots, AI-powered search, intelligent document
+              processing, and other cutting-edge solutions</b>.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      {/* Course Content Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="text-3xl text-blue-600">
+                <i className="fa-solid fa-list-check"></i>
+              </div>
+              <h2 className="text-3xl font-bold">Course Content</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">1. Introduction to LLMs</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>What are Large Language Models (LLMs)?</li>
+                  <li>Pre-trained LLMs</li>
+                  <li>Types of Popular Models</li>
+                  <li>Output Modalities</li>
+                  <li>Cost & Performance Overview</li>
                 </ul>
                 
-                <h3 className="font-semibold text-lg mt-6 mb-3">This course includes</h3>
-                <div className="space-y-2">
-                  {course.includes?.map((item: any, index: number) => (
-                    <div key={index} className="flex items-center">
-                      <item.icon className="text-primary mr-2 h-4 w-4" />
-                      <span>{item.text}</span>
-                    </div>
-                  ))}
-                </div>
+                <h3 className="text-2xl font-semibold mb-4">2. Basic Interactions with LLMs</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Communicating via APIs (OpenAI, VertexAI)</li>
+                  <li>Authentication & Secure Access</li>
+                  <li>Frameworks to Simplify Usage</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">3. Model Selection</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Criteria</li>
+                  <li>Gemini Model Variants</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">4. Text Use Cases</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Creative and Structured Text Generation</li>
+                  <li>Factual Q&A and Context-Based Interactions</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">5. Image Use Cases</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Caption Generation & Visual Interpretation</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">6. Audio Use Cases</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Speech-to-Text (ASR)</li>
+                  <li>Voice Command Processing</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">7. Video Use Cases</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Frame-by-Frame Analysis & Audio Transcription</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">8. Multimodal Use Cases</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Combining Text, Image, Audio, Video Inputs</li>
+                </ul>
               </div>
               
-              <div className="w-full md:w-1/3">
-                <h3 className="font-semibold text-lg mb-3">Instructor</h3>
-                <div className="flex items-start">
-                  <img 
-                    src={course.instructor?.image} 
-                    alt={course.instructor?.name} 
-                    className="w-12 h-12 rounded-full object-cover mr-4"
-                  />
-                  <div>
-                    <h4 className="font-medium">{course.instructor?.name}</h4>
-                    <p className="text-gray-600 text-sm mb-2">{course.instructor?.title}</p>
-                    <div className="flex items-center">
-                      <div className="flex text-yellow-400">
-                        <Star className="fill-current h-4 w-4" />
-                        <Star className="fill-current h-4 w-4" />
-                        <Star className="fill-current h-4 w-4" />
-                        <Star className="fill-current h-4 w-4" />
-                        <Star className="fill-current h-4 w-4" />
-                      </div>
-                      <span className="ml-2 text-gray-600 text-sm">5.0 Instructor Rating</span>
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">9. Understanding Prompts</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Prompt Types</li>
+                  <li>Prompt Engineering Techniques</li>
+                  <li>Prompt Versioning & Management</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">10. Limitations of LLMs</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Hallucinations</li>
+                  <li>Token Cost and Latency</li>
+                  <li>Limited Context Window</li>
+                  <li>Need for Grounding External Data</li>
+                  <li>Input Validation & Prompt Injection Defense</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">11. Prompt Tuning Parameters</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Temperature</li>
+                  <li>Top_p</li>
+                  <li>Max_tokens</li>
+                  <li>Frequency & Presence Penalty</li>
+                  <li>Tuning Examples for Creative & Factual Responses</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">12. Embeddings</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>What are Embeddings?</li>
+                  <li>Generating & Using Text/Image Embeddings</li>
+                  <li>Storing in Vector Databases</li>
+                  <li>Similarity Metrics</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">13. Vector DBs</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Intro to VectorDBs: ChromaDB, Pinecone, FAISS</li>
+                  <li>Use in Retrieval-Augmented Generation (RAG)</li>
+                  <li>RAG Strategies</li>
+                </ul>
+                
+                <h3 className="text-2xl font-semibold mb-4">14. Agentic AI</h3>
+                <ul className="list-disc list-inside text-gray-700 mb-6">
+                  <li>Agentic AI & Tool Use</li>
+                  <li>VertexAI-Specific Tools & Function Calling</li>
+                  <li>Pipelines to Build & Deploy Scalable LLM Apps</li>
+                  <li>External System Integration</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
+      {/* CTA Section */}
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Master Generative AI?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Join our comprehensive course and learn the skills needed to build cutting-edge AI applications
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2">
+              Enroll Now
+            </Button>
+            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary px-6 py-2">
+              Contact for Corporate Training
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
