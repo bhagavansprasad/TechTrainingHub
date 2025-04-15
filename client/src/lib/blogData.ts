@@ -39,7 +39,7 @@ export const blogPosts = [
     title: "The Idea that caused my job: Debugging utility",
     excerpt: "A technical writeup on how a simple debugging utility idea became an essential tool in development.",
     date: "March 28, 2024",
-    image: "https://res.cloudinary.com/practicaldev/image/fetch/s--Iuj1N8WR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/58h1rzrx03zjujwygagn.png",
+    image: "/images/blog/blog-1.png",
     category: "Technical",
     categoryColor: "bg-purple-100 text-purple-800",
     url: "https://dev.to/bhagavan_prasad_d1496a96a/python-debugging-utility-kd1"
@@ -48,7 +48,7 @@ export const blogPosts = [
     title: "A Beginner's Practical Guide to Vector Database: ChromaDB",
     excerpt: "Learn how to get started with vector databases using ChromaDB for better data management and retrieval.",
     date: "March 15, 2024",
-    image: "https://res.cloudinary.com/practicaldev/image/fetch/s--CMAjIPY9--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6f8ry3yy5p1p2lc0k4jr.webp",
+    image: "/images/blog/blog-2.webp",
     category: "Technical",
     categoryColor: "bg-purple-100 text-purple-800",
     url: "https://dev.to/bhagavan_prasad_d1496a96a/a-beginners-practical-guide-to-vector-database-chromadb-5122"

@@ -24,28 +24,28 @@ const ClientLogos = () => {
           </div>
           <div className="grayscale hover:grayscale-0 transition">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png" 
+              src="/images/logos/apple-logo.png" 
               alt="Apple" 
               className="h-10 w-auto"
             />
           </div>
           <div className="grayscale hover:grayscale-0 transition">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png" 
+              src="/images/logos/ibm-logo.png" 
               alt="IBM" 
               className="h-10 w-auto"
             />
           </div>
           <div className="grayscale hover:grayscale-0 transition">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" 
+              src="/images/logos/amazon-logo.png" 
               alt="Amazon" 
               className="h-10 w-auto"
             />
           </div>
           <div className="grayscale hover:grayscale-0 transition">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" 
+              src="/images/logos/netflix-logo.png" 
               alt="Netflix" 
               className="h-10 w-auto"
             />

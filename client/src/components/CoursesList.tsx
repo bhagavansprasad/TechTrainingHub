@@ -41,7 +41,7 @@ const CourseCard = ({ course }: { course: Course }) => {
           alt={`${course.title} Course`} 
           className="w-full h-48 object-cover"
           onError={(e) => {
-            e.currentTarget.src = "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80";
+            e.currentTarget.src = "/images/fallback/course-fallback.jpg";
             e.currentTarget.onerror = null;
           }}
         />

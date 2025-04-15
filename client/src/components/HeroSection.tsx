@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img 
           className="w-full h-full object-cover" 
-          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e8b98fba33-156e28c03d3d6cdcaa35.png"
+          src="/images/hero-bg.png"
           alt="modern tech classroom with students working on computers, soft lighting, professional atmosphere" 
         />
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
