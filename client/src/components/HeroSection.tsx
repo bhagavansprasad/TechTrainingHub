@@ -1,7 +1,12 @@
-import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="relative bg-gradient-to-r from-blue-900 to-secondary text-white py-20">
       <div className="absolute inset-0">
@@ -18,12 +23,19 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Accelerate Your IT Career With Industry-Ready Skills</h1>
             <p className="text-xl mb-8 text-gray-200">Expert-led training programs designed to help you master in-demand technologies and advance your career in tech.</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="#courses">
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto">Enroll Now</Button>
-              </Link>
-              <Link href="#demo">
-                <Button variant="outline" className="bg-blue-100 hover:bg-blue-200 text-blue-800 border-blue-300 px-8 py-6 h-auto font-semibold">Request Demo</Button>
-              </Link>
+              <Button 
+                onClick={() => scrollToSection("courses")} 
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 h-auto"
+              >
+                Enroll Now
+              </Button>
+              <Button 
+                onClick={() => scrollToSection("contact")} 
+                variant="outline" 
+                className="bg-blue-100 hover:bg-blue-200 text-blue-800 border-blue-300 px-8 py-6 h-auto font-semibold"
+              >
+                Request Demo
+              </Button>
             </div>
           </div>
         </div>

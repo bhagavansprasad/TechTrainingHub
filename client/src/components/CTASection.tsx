@@ -32,6 +32,13 @@ const CTASection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -64,8 +71,27 @@ const CTASection = () => {
             <h2 className="text-3xl font-bold mb-6">Ready to Accelerate Your IT Career?</h2>
             <p className="text-xl mb-8 opacity-90">Schedule a free demo session with our instructors and discover how our training programs can help you achieve your career goals.</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="outline" className="bg-white text-primary hover:bg-gray-100">Schedule a Demo</Button>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white">Enroll Now</Button>
+              <Button 
+                onClick={() => {
+                  // Focus on first form input after a small delay
+                  setTimeout(() => {
+                    const nameInput = document.querySelector('input[name="name"]');
+                    if (nameInput) {
+                      (nameInput as HTMLInputElement).focus();
+                    }
+                  }, 100);
+                }} 
+                variant="outline" 
+                className="bg-white text-primary hover:bg-gray-100"
+              >
+                Schedule a Demo
+              </Button>
+              <Button 
+                onClick={() => scrollToSection("courses")}
+                className="bg-orange-500 hover:bg-orange-600 text-white"
+              >
+                Enroll Now
+              </Button>
             </div>
           </div>
           
