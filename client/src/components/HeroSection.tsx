@@ -3,8 +3,16 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-900 to-secondary text-white py-20">
-      <div className="container mx-auto px-4">
+    <section className="relative bg-gradient-to-r from-blue-900 to-secondary text-white py-20">
+      <div className="absolute inset-0">
+        <img 
+          className="w-full h-full object-cover" 
+          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e8b98fba33-156e28c03d3d6cdcaa35.png"
+          alt="modern tech classroom with students working on computers, soft lighting, professional atmosphere" 
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Accelerate Your IT Career With Industry-Ready Skills</h1>
@@ -17,14 +25,6 @@ const HeroSection = () => {
                 <Button variant="outline" className="bg-blue-100 hover:bg-blue-200 text-blue-800 border-blue-300 px-8 py-6 h-auto font-semibold">Request Demo</Button>
               </Link>
             </div>
-          </div>
-          <div className="lg:w-1/2 lg:pl-10 relative">
-            <div className="absolute inset-0 bg-black/20 rounded-lg z-10"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-              alt="Indian students learning together" 
-              className="rounded-lg shadow-2xl w-full object-cover h-[400px] opacity-75"
-            />
           </div>
         </div>
       </div>
