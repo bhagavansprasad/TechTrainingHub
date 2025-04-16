@@ -84,15 +84,8 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} <span className="text-primary">Promptly</span><span style={{color: 'rgb(144, 200, 73)'}}>AI</span>. All rights reserved.</p>
-            <div>
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" 
-                alt="Payment Methods" 
-                className="h-6"
-              />
-            </div>
+          <div className="flex flex-col md:flex-row justify-center">
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} <span className="text-primary">Promptly</span><span style={{color: 'rgb(144, 200, 73)'}}>AI</span>. All rights reserved.</p>
           </div>
         </div>
       </div>
